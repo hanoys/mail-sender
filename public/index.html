@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width">
+  <title>Mail Sender</title>
+  <link rel="stylesheet" href="../static/bootstrap.min.css">
+</head>
+<body style="width: 50%">
+  <form method="post" action="/page" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="name">Your Name</label><br>
+      <input class="form-control mt-2" type="text" id="name" name="name">
+    </div>
+    <div class="form-group mt-2">
+      <label class="" for="mail">Email address</label><br>
+      <input class="form-control" type="email" id="mail" name="mail">
+    </div>
+    <div class="form-group mt-2">
+      <input type="file" name="files" multiple>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+  </form>
+</body>
+</html>
